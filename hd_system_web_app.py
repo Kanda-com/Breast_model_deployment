@@ -29,11 +29,11 @@ def Breast_disease_prediction(input_data):
         return "Noncancerous patient"
 def main():
     st.title("Breast Cancer ML Prediction model")
-    mean_radius = st.text_imput("Enter the patient's Age 15-80 ")
-    mean_texture = st.text_input("Enter the patient's Gender (0[F],1[M])")
-    mean_perimeter = st.text_input("Chest Pain Level(1,2 or 3)")
-    mean_area = st.text_input("The Blood Pressure(mm hg)level (94-200)")
-    mean_smoothness = st.text_input("Cholestoral level(mg/dl) (131 - 290)")
+    mean_radius = st.text_imput("Enter the mean radius ")
+    mean_texture = st.text_input("Enter the mean texture")
+    mean_perimeter = st.text_input("mean perimeter")
+    mean_area = st.text_input("mean area")
+    mean_smoothness = st.text_input("mean smoothness")
     
     mean_radius = pd.to_numeric(mean_radius, errors='coerce')
     mean_texture = pd.to_numeric(mean_texture, errors='coerce')
